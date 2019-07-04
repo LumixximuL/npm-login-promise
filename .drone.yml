@@ -1,0 +1,14 @@
+---
+kind: pipeline
+
+steps:
+- name: test
+  image: node:8
+  commands:
+  - npm ci
+  - npm run test
+
+- name: build
+  image: node:8
+  commands:
+  - npm run build
