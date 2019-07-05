@@ -1,6 +1,6 @@
 {
   "name": "npm-login-promise",
-  "version": "1.0.0",
+  "version": "0.0.0",
   "description": "npm login API using a promise",
   "main": "lib/index.js",
   "scripts": {
@@ -19,17 +19,20 @@
   "homepage": "https://github.com/LumixximuL/npm-login-promise#readme",
   "dependencies": {
     "@babel/polyfill": "^7.4.4",
-    "husky": "^3.0.0",
-    "lint-staged": "^9.0.2",
-    "npm-registry-client": "^8.6.0",
-    "prettier": "^1.18.2"
+    "npm-registry-client": "^8.6.0"
   },
   "devDependencies": {
     "@babel/cli": "^7.5.0",
     "@babel/core": "^7.5.0",
     "@babel/preset-env": "^7.5.0",
+    "@semantic-release/changelog": "^3.0.4",
+    "@semantic-release/git": "^7.0.16",
     "babel-jest": "^24.8.0",
+    "husky": "^3.0.0",
     "jest": "^24.8.0",
+    "lint-staged": "^9.0.2",
+    "prettier": "^1.18.2",
+    "semantic-release": "^15.13.18",
     "sinon": "^7.3.2"
   },
   "husky": {
@@ -39,7 +42,11 @@
   },
   "lint-staged": {
     "src/**/*.{js,jsx,ts,tsx,json,css,scss,md}": [
-      "prettier --single-quote --write",
+      "prettier --write",
+      "git add"
+    ],
+    "**.{js,yml}": [
+      "prettier --write",
       "git add"
     ]
   }

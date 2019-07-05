@@ -1,15 +1,34 @@
 ---
 kind: pipeline
 name: pipeline
+trigger:
+    branch: -master
 
 steps:
-- name: test
-  image: node:8
-  commands:
-  - npm ci
-  - npm run test
+    - name: npm_auth
+      image: robertstettner/drone-npm-auth
+      settings:
+          username:
+              from_secret: NPM_USERNAME
+          password:
+              from_secret: NPM_PASSWORD
+          email:
+              from_secret: NPM_EMAIL
 
-- name: build
-  image: node:8
-  commands:
-  - npm run build
+    - name: verify
+      image: node:8
+      commands:
+          - npm ci
+          - npm run build
+          - npm run test
+
+    - name: publish
+      image: node:8
+      environment:
+          GITHUB_TOKEN:
+              from_secret: GITHUB_TOKEN
+      commands:
+          - npx semantic-release@15
+      when:
+          event:
+              - push
