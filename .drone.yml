@@ -1,7 +1,5 @@
 kind: pipeline
 name: default
-trigger:
-    branch: -master
 
 steps:
     - name: npm_auth
