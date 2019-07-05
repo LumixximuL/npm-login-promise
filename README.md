@@ -5,6 +5,7 @@ npm login programmatic API that returns a promise
 [![Build Status](https://cloud.drone.io/api/badges/LumixximuL/npm-login-promise/status.svg)](https://cloud.drone.io/LumixximuL/npm-login-promise)
 [![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/semantic-release/semantic-release)
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
+[![Renovate enabled](https://img.shields.io/badge/renovate-enabled-brightgreen.svg)](https://renovatebot.com/)
 
 ## Install
 
