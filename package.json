@@ -32,7 +32,7 @@
     "jest": "24.8.0",
     "lint-staged": "9.2.1",
     "prettier": "1.18.2",
-    "semantic-release": "15.13.19",
+    "semantic-release": "15.13.21",
     "sinon": "7.4.1"
   },
   "husky": {
