@@ -1,6 +1,6 @@
 {
   "name": "npm-login-promise",
-  "version": "1.0.52",
+  "version": "1.0.53",
   "description": "npm login API using a promise",
   "main": "lib/index.js",
   "scripts": {
