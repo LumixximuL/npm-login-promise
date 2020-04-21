@@ -30,7 +30,7 @@
     "babel-jest": "24.9.0",
     "husky": "4.2.5",
     "jest": "24.9.0",
-    "lint-staged": "10.1.6",
+    "lint-staged": "10.1.7",
     "prettier": "1.19.1",
     "semantic-release": "16.0.4",
     "sinon": "8.1.1"
