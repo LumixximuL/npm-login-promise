@@ -22,8 +22,8 @@
     "npm-registry-client": "^8.6.0"
   },
   "devDependencies": {
-    "@babel/cli": "7.13.16",
-    "@babel/core": "7.14.2",
+    "@babel/cli": "7.14.3",
+    "@babel/core": "7.14.3",
     "@babel/preset-env": "7.14.2",
     "@semantic-release/changelog": "3.0.6",
     "@semantic-release/git": "8.0.0",
