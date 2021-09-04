@@ -23,7 +23,7 @@
   },
   "devDependencies": {
     "@babel/cli": "7.15.4",
-    "@babel/core": "7.15.4",
+    "@babel/core": "7.15.5",
     "@babel/preset-env": "7.15.4",
     "@semantic-release/changelog": "3.0.6",
     "@semantic-release/git": "8.0.0",
