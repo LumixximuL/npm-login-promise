@@ -16,14 +16,14 @@ steps:
               from_secret: NPM_EMAIL
 
     - name: verify
-      image: node:8
+      image: node:17
       commands:
           - npm ci
           - npm run build
           - npm run test
 
     - name: publish
-      image: node:8
+      image: node:17
       environment:
           GITHUB_TOKEN:
               from_secret: GITHUB_TOKEN
