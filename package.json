@@ -33,7 +33,7 @@
     "lint-staged": "10.5.4",
     "prettier": "1.19.1",
     "semantic-release": "17.4.7",
-    "sinon": "8.1.1"
+    "sinon": "17.0.1"
   },
   "husky": {
     "hooks": {
